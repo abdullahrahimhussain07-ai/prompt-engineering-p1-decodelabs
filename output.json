@@ -1,7 +1,57 @@
-﻿{
-  "customer_name": "Sarah Jenkins",
-  "order_number": "ORD-88492",
-  "complaint_type": "DAMAGED_PRODUCT",
-  "severity_level": 5,
-  "contact_phone": null
-}
+﻿[
+    {
+        "test_id":  1,
+        "test_name":  "Wrong Person Phone",
+        "parsed_data":  {
+                            "customer_name":  "Ahmed Raza",
+                            "order_number":  "5521",
+                            "complaint_type":  "DAMAGED_PRODUCT",
+                            "severity_level":  5,
+                            "contact_phone":  null
+                        }
+    },
+    {
+        "test_id":  2,
+        "test_name":  "Not-a-Phone Number",
+        "parsed_data":  {
+                            "customer_name":  null,
+                            "order_number":  "9982",
+                            "complaint_type":  "LATE_DELIVERY",
+                            "severity_level":  3,
+                            "contact_phone":  "03001234567"
+                        }
+    },
+    {
+        "test_id":  3,
+        "test_name":  "Severity Override Conflict",
+        "parsed_data":  {
+                            "customer_name":  null,
+                            "order_number":  null,
+                            "complaint_type":  "DAMAGED_PRODUCT",
+                            "severity_level":  5,
+                            "contact_phone":  null
+                        }
+    },
+    {
+        "test_id":  4,
+        "test_name":  "Multiple Orders",
+        "parsed_data":  {
+                            "customer_name":  null,
+                            "order_number":  null,
+                            "complaint_type":  "DAMAGED_PRODUCT",
+                            "severity_level":  3,
+                            "contact_phone":  null
+                        }
+    },
+    {
+        "test_id":  5,
+        "test_name":  "Emotional Severity Inflation",
+        "parsed_data":  {
+                            "customer_name":  null,
+                            "order_number":  null,
+                            "complaint_type":  "DAMAGED_PRODUCT",
+                            "severity_level":  1,
+                            "contact_phone":  null
+                        }
+    }
+]

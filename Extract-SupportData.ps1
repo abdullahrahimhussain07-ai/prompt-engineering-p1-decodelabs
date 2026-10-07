@@ -61,5 +61,4 @@ $results = foreach ($case in $edgeCases) {
     }
 }
 
-# Update output.json
 $results | ConvertTo-Json -Depth 5 | Out-File -FilePath "$HOME\Desktop\powershell-support-parser\output.json" -Encoding utf8
